@@ -17,6 +17,25 @@
         image: <an image from the show data, or a default imege if no image exists, (image isn't needed until later)>
       }
  */
+
+// Here is the code that gave me Promise data instead of data array.
+// async function searchShows(query) {
+
+//   let res = await axios.get(`http://api.tvmaze.com/search/shows?q=${query}`);
+//   let show = res.data.show
+//   return {
+//       id: show.id,
+//       name: show.name,
+//       summary: show.summary,
+//       image: show.image.medium,
+//     }
+//     }
+    
+
+
+
+
+
 async function searchShows(query) {
   // TODO: Make an ajax request to the searchShows api.  Remove
   // hard coded data.
